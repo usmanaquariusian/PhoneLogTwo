@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.usmanahmed.phonelogtwo.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <fragment
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:name="com.example.usmanahmed.PhoneLogTwo.BlankFragment"
+        android:id="@+id/frg2"
+    </fragment>
+<fragment
+android:layout_marginTop="400dp"
+android:layout_width="match_parent"
+android:layout_height="400dp"
+android:name="com.example.usmanahmed.PhoneLogTwo.DetailFragment"
+android:id="@+id/frg2"
+    ></fragment>
+<include layout="@layout/content_main" />
+
+    </android.support.design.widget.CoordinatorLayout>
